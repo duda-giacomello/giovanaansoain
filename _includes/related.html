@@ -1,0 +1,24 @@
+<section class="related-projects">
+    <div class="wrapper-related">
+		<h4 class="section-title">Projetos relacionados</h4>
+		<div class="wrapper-related-project">
+		{% assign maxRelatedCounter  = 0 %}
+		{% for tag in page.tags %}
+			{% assign projects = site.projects | sort: 'order' | where: 'tags',tag %}
+			{% for project in projects %}
+				{% if project.url != page.url and maxRelatedCounter < 8 %}
+					<a class="box-project-related" href="{{ project.permalink }}">
+						<div class="projects">
+							<img src="{{ site.baseurl }}{{ project.image }}" alt="">
+							<div class="wrapper-title-projects">
+								<p class="title-project">{{ project.title }}</p>
+							</div>
+						</div>
+					</a>
+					{% assign maxRelatedCounreter  = maxRelatedCounter | plus: 1 %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+		</div>   	
+	</div>
+</section>

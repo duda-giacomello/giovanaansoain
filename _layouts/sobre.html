@@ -1,0 +1,31 @@
+{%- include head.html -%}
+
+  <body>
+  	<main class="about">
+		<!-- header -->
+	    {%- include header.html -%}
+
+	    <!-- banner -->
+		{% include banner-pages.html %}
+
+		<section class="about-content">
+			{{ content }}
+		</section>
+
+		{%- include sample-services.html -%}
+
+		{% if page.video-image %}
+
+			{%- include video-about.html -%}
+
+		{% endif %}
+
+		{%- include call-to-action.html -%}
+
+	</main>
+
+	{%- include footer.html -%}
+
+  </body>
+
+</html>

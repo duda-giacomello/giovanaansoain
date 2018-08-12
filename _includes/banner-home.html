@@ -1,0 +1,21 @@
+<section class="banner">
+	<img class="banner-img" src="{{ site.baseurl }}{{ page.image }}" alt="banner">
+	<div class="banner-wrapper-info">
+		<div class="banner-box-center">
+			<h2 class="banner-title">{{ page.banner_title }}</h2>
+			<p class="banner-subtitle">{{ page.banner_subtitle }}</p>
+			<div class="row-buttons">
+				<a href="about" class="btn-secondary">Sobre mim</a>
+				<a href="contact" class="btn-primary">Fale Comigo</a>
+			</div>
+		</div>
+		<div class="banner-box-bottom">
+			<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+			<div class="wrapper-btn-scroll">
+				<p>Role para baixo</p>
+				<i class="icon-scroll">scroll</i>
+			</div>
+			<a href="https://api.whatsapp.com/send?phone=5511976757107" target="_blank">{{ site.phone }}</a>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,28 @@
+<section id="services" class="sample-services">
+	{% if page.services_title %}
+	<h4 class="section-title">{{ page.services_title }}</h4>
+	{% endif %}
+	<div class="services-content container">
+		<div class="box-services">
+			<img class="services-icon" src="{{ site.baseurl }}assets/icons/assessoria.svg" alt="">
+			<div class="services-info">
+				<h3 class="services-title">{{ page.services_box1_title }}</h3>
+				<p class="services-description">{{ page.services_box1_text }}</p>	
+			</div>
+		</div>
+		<div class="box-services">
+			<img class="services-icon" src="{{ site.baseurl }}assets/icons/agilidade.svg" alt="">
+			<div class="services-info">
+				<h3 class="services-title">{{ page.services_box2_title }}</h3>
+				<p class="services-description">{{ page.services_box2_text }}</p>	
+			</div>
+		</div>
+		<div class="box-services">
+			<img class="services-icon" src="{{ site.baseurl }}assets/icons/inovacao.svg" alt="">
+			<div class="services-info">
+				<h3 class="services-title">{{ page.services_box3_title }}</h3>
+				<p class="services-description">{{ page.services_box3_text }}</p>	
+			</div>
+		</div>
+	</div>
+</section>

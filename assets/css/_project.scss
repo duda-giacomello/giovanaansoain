@@ -1,0 +1,86 @@
+.project-single{
+    @media screen and (min-width: $screen-md){
+        padding-top: 60px;
+    }
+
+    @media screen and (max-width: $screen-sm-max){
+        padding-top: 30px;
+    }
+
+    p{
+        font-family: $rokkitt;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 30px;
+        color: #3d3d3d;
+        text-align: left;
+        margin-bottom: 30px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    p:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.project-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    @media screen and (min-width: $screen-md){
+        padding-bottom: 60px;
+    }
+
+    @media screen and (max-width: $screen-xs-max){
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+}
+
+.project-info-item{
+    max-width: 30%;
+
+    p{
+        text-align: center; 
+        text-transform: capitalize; 
+    }
+
+    @media screen and (max-width: $screen-xs-max){
+        width: 100%;
+        max-width: initial;
+    }
+}
+
+.project-info-item + .project-info-item{
+    @media screen and (max-width: $screen-xs-max){
+        margin-top: 40px;
+    }
+}
+
+.project-info-title{
+    font-family: $montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    color: #a7a7a7;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    @media screen and (max-width: $screen-xs-max){
+        margin-bottom: 20px;
+    }
+
+}
+
+.project-info-text{
+    font-family: $rokkitt;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #3d3d3d;
+}
